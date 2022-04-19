@@ -1,0 +1,191 @@
+/* star selector slects everything on the page. This will make it so
+everything will stay the same uniform size.*/
+* {
+}
+body {
+
+background-color: white;
+height: auto;
+/*this is a class reference to the big hero photo so it only
+edits this photo and not all of the images.*/
+}
+/*this is changing the paragraph*/
+p {
+color: black;
+/* add padding to create white space, could also create (margin bottom)*/
+/*padding: 5rem;*/
+/*margin-bottom: 1rem;*/
+}
+/*this changes the entire main area. Padding gives white space. Margin
+is used to space things away. Padding creates white space around, used for the
+inside of a container. Marigin gets added to the outside of that. HTML
+adds margin as a default Can also do padding padding right, top, bottom,
+left. With no specification, you are adding it all around.*/
+main {
+font-family: baskerville-urw, serif;
+font-weight: 400;
+font-style: normal;
+padding: auto;
+max-width: auto;
+margin-left: auto;
+margin-right: auto;
+background-color: #FFFFFF;
+color: black;
+text-align: center;
+
+}
+img{
+	display: flex;
+	justify-content: space-between;
+	max-width: 75rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+.container{
+	display: flex;
+	justify-content: space-between;
+	max-width: 75rem;
+	margin-left: auto;
+	margin-right: auto;
+}
+@media screen and (min-width: 40em){
+	main{displace: flex;
+		justify-content: space-between;
+	}
+	main .main-content{
+		width: 60%;
+	}
+}
+/*li {
+float left;
+}*/
+@media screen and (min-width:  40em){
+	p{
+		font-size: 1.5rem;
+	}
+}
+@media screen and (min-width: 64em){
+	p{
+		font-size: 2rem;
+	}
+}
+header a{
+background-color: transparent;
+}
+header a:hover{
+background-color: transparent;
+}
+li a {
+display:  block;
+color: #FFFFFF;
+text-align: center;
+padding:  14px 16px;
+text-decoration:  none;
+}
+/*margin auto says, "whatever space is left, fill that up"*/
+.main-content img {
+width: 100%;
+text-align: center;
+box-sizing:  border-box;
+transition: all .5s;
+border-radius: 1rem;
+}
+
+.main-content h1{
+text-align: center;
+}
+.main-content h2:hover{
+color: #8B6089;
+}
+.main-content h2{
+text-align: left;
+border-bottom: 2px solid #8B6089;
+display:  inline-block;
+}
+.main-content h3{
+text-align: left;
+display:  inline-block;
+}
+.main-content p{
+text-align: center;
+
+}
+.main-content a{
+color: #8B6089;
+text-decoration: none;
+background-color: transparent;
+/*1 rem = 1 rem on all 4 sides or you can add 4 and it will go on the
+right sides*/
+padding: .5rem 1rem .5rem 1rem;
+/*round off corners*/
+border-radius: .25rem;
+
+}
+.main-content a:hover{
+color: #707070;
+background-color: transparent;
+}
+.side-content img {
+box-sizing:  border-box;
+transition: all .5s;
+text-align: center;
+width: 100%;
+border-radius: 1rem;
+
+}
+header{
+border-bottom:  1 rem solid #8B6089;
+text-align: center;
+background-color: transparent;
+width: 100%
+}
+
+header img {
+	width:  100%;s
+}
+/* covers all links on the page. Wherever there is an a tag */
+a {
+width: 100%;
+color: #FFFFFF;
+text-decoration: none;
+background-color: #8B6089;
+/*1 rem = 1 rem on all 4 sides or you can add 4 and it will go on the
+right sides*/
+padding: .5rem 1rem .5rem 1rem;
+/*round off corners*/
+border-radius: .25rem;
+}
+/*1 rem = 16 px. 16px is default font size or 1 rem */
+a:hover{
+background-color: #707070;
+width: 100%;
+}
+p{
+font-family: quasimoda,sans-serif;
+font-weight: 600;
+font-style: normal;
+text-align: right;
+font-size: 1rem;
+}
+footer{
+background-color: #8B6089;
+padding: 5px;
+width: auto;
+}
+footer p {
+color: #FFFFFF;
+text-align: center;
+}
+
+/* got rid of the bullet points*/
+ul {
+padding: 0;
+marigin: 0;
+list-style: none;
+overflow: hidden;
+background-color: #8B6089;
+text-align: center;
+}
+li {
+display: inline-block;
+}
